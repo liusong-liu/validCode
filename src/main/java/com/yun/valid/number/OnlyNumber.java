@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 数字验证码
  */
-@RestController
-@RequestMapping("/onlyNumber")
 @Slf4j
 public class OnlyNumber {
 
@@ -17,10 +15,13 @@ public class OnlyNumber {
      * 生成对应位数的验证码
      * @return
      */
-    @GetMapping("/number")
-    public String onlyNumber(int x){
+    public String make(int x){
         System.out.println("位数 " + x);
-        int random = (int) ((Math.random() * 9) * Math.pow(10, x));
-        return String.valueOf(random);
+        String len = "";
+        for (int i = 0; i <x ; i++) {
+            long random = Math.round(Math.random()*9);
+            len+= random+"";
+        }
+        return len;
     }
 }
