@@ -13,8 +13,8 @@ import java.util.Random;
 
 @Service
 public class OutImageServiceImpl implements OutImageService {
-    private static final int W = 250;
-    private static final int H = 100;
+    private static final int W = 120;
+    private static final int H = 50;
 
 
     @Override
