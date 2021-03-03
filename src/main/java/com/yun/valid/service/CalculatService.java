@@ -5,5 +5,5 @@ import java.awt.image.BufferedImage;
 
 public interface CalculatService {
 
-    public BufferedImage getImage(HttpServletResponse response) throws Exception;
+    BufferedImage getImage(HttpServletResponse response) throws Exception;
 }

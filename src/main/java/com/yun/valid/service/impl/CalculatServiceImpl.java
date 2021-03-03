@@ -49,7 +49,6 @@ public class CalculatServiceImpl implements CalculatService {
         System.out.println("result = " + result);
         // 将运算式绘到图片中
         g.drawString(value[0], 2, 22);
-
         //释放此图形的上下文以及它使用的所有系统资源，类似于关闭流
         g.dispose();
         return image;

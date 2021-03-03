@@ -10,6 +10,6 @@
 * 数字计算验证码(加、减、乘)： http://localhost:12345/calculate/image
 
 ###汉字类验证码
-
+* 汉字验证码：http://localhost:12345/chinese/char/draw
 ###图片验证码
 
